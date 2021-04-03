@@ -64,7 +64,7 @@ async function Req(address,TxDict,Addr,Goto){
 			//console.log(Object.keys(Addr),Addr);
 		let key = Object.keys(Addr);
 		for(let i=0 ;i<key.length;i++){
-			if(key[i] == "0x70462d3278dac620a4d2c7ae674bc46c6916974e") //Creator
+			if(key[i] == "0x70462d3278dac620a4d2c7ae674bc46c6916974e" || Addr[key[i]]<0) //Creator
 				continue;
 			console.log("Who :",key[i]);
 			console.log("Total :",Addr[key[i]]);

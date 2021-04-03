@@ -1,1 +1,4 @@
-"# Bitkub_Detective" 
+"# Bitkub_Detective"  <br>
+
+npm install <br>
+node axios.js > out.txt <br>

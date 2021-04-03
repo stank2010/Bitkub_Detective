@@ -11,6 +11,9 @@ let Goto = {};
 
 
 async function Req(address,TxDict,Addr,Goto){
+	if(address == "0x70462d3278dac620a4d2c7ae674bc46c6916974e")
+		return [TxDict,Addr,Goto];
+
 	let url = "https://api-ropsten.etherscan.io/api?module=account&action=tokentx&address="+address+"&startblock=0&endblock=999999999&sort=asc&apikey=K7ST5DC6VP2Z5ZVWWD1IB3JDB5AHIEV274";
 
 	let res = await axios.get(url);
